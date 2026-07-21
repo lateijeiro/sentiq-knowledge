@@ -42,11 +42,16 @@ The ideal Sentiq B2B customer is an organization that:
 
 # Priority Customers
 
-Initial focus:
+Sentiq can sell to organizations in any sport.
 
-## Rugby Clubs
+Priority outreach sports:
 
-Reasons:
+- Rugby.
+- Hockey.
+- Football.
+- Basketball.
+
+These segments are attractive because they often have:
 
 - Strong organizational culture.
 - Structured youth development.
@@ -56,7 +61,7 @@ Reasons:
 
 ---
 
-# Future Segments
+# Additional Segments
 
 Potential expansion:
 

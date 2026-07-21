@@ -92,13 +92,13 @@ That is the future Sentiq wants to create.
 
 ---
 
-# Beyond Rugby
+# Across Sports
 
-Rugby is the beginning.
+Sentiq is designed for athletes in any sport.
 
-Not the destination.
+Rugby, hockey, football and basketball are priority sports for early outreach and validation, not limits on who can use the product.
 
-The principles behind Sentiq apply across every team sport.
+The principles behind Sentiq apply across team and individual sports.
 
 The sport changes.
 

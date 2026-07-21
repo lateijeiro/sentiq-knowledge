@@ -56,7 +56,8 @@ Primary user:
 
 - Young athlete
 - Approximately 14–23 years old
-- Initially rugby
+- Any sport
+- Priority early outreach: rugby, hockey, football and basketball
 
 Secondary influence channels:
 

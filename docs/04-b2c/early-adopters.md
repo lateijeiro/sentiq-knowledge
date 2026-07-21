@@ -90,7 +90,9 @@ Ideal early adopters:
 - Athletes open to new tools
 - Community influencers inside clubs
 
-Initial sport focus: rugby.
+Sentiq is open to early adopters from any sport.
+
+Priority outreach sports: rugby, hockey, football and basketball.
 
 ---
 

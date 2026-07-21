@@ -55,11 +55,14 @@ Sentiq is an athlete development platform that helps young athletes build clarit
 Sentiq is:
 
 - An athlete development platform
+- A sport-agnostic product for athletes in any discipline
 - An event-based reflection tool
 - A personal progress system
 - A practical assistant to athletes and coaches
 - A B2C product for athletes
 - A B2B product for clubs, academies and coaches
+
+Rugby, hockey, football and basketball are priority sports for early outreach and validation. They are not product boundaries. Never define Sentiq as a rugby-only or team-sports-only platform.
 
 Sentiq is not:
 

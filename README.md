@@ -51,6 +51,8 @@ Do not load every document into every answer when a smaller relevant set is enou
 
 Sentiq is an athlete development platform that helps young athletes improve through structured reflection, objectives, progress and practical guidance.
 
+It is designed for athletes in any sport. Rugby, hockey, football and basketball are priority sports for early outreach and validation, not product limits.
+
 It is not a therapy, psychology or mental-health product.
 
 Coach Sentiq produces specific outputs; it is not a conversational chatbot and does not replace coaches.

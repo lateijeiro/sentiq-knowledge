@@ -44,10 +44,11 @@ The main customer is the organization.
 
 Examples:
 
-- Rugby clubs.
+- Rugby, hockey, football and basketball clubs.
 - Sports academies.
 - Training programs.
 - Youth development organizations.
+- Organizations from any other sport.
 
 ---
 

@@ -56,7 +56,8 @@ Coaches are trusted development figures.
 
 Strategy:
 
-- Rugby clubs, academies and youth categories
+- Clubs, academies and youth categories across any sport
+- Priority outreach in rugby, hockey, football and basketball
 - Sentiq Org as the operational layer for clubs
 - Organization invitations that bring athletes into the app
 

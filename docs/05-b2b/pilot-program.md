@@ -48,16 +48,23 @@ The ideal pilot organization:
 
 # Initial Pilot Focus
 
-The first pilots should prioritize:
+Pilots can include organizations from any sport.
 
-## Rugby Clubs
+Priority outreach sports:
 
-Reasons:
+- Rugby.
+- Hockey.
+- Football.
+- Basketball.
+
+These markets are prioritized because they often offer:
 
 - Strong development culture.
 - Structured categories.
 - Existing relationships.
 - High alignment with Sentiq philosophy.
+
+This prioritization is a go-to-market choice, not a product restriction.
 
 ---
 

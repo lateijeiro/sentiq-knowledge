@@ -59,11 +59,12 @@ The primary customer is the organization.
 
 Examples:
 
-- Rugby clubs.
+- Rugby, hockey, football and basketball clubs.
 - Sports academies.
 - Youth development programs.
 - Training institutions.
 - Competitive sports organizations.
+- Organizations from any other sport.
 
 ---
 
@@ -209,26 +210,22 @@ Organization expansion
 
 # Initial Market Strategy
 
-The initial market focus is rugby.
+Sentiq Org is designed for organizations in any sport.
 
-Reasons:
+Priority outreach markets:
 
-- Strong club culture.
-- Structured youth categories.
-- Development-oriented environment.
-- High value placed on team and personal growth.
+- Rugby.
+- Hockey.
+- Football.
+- Basketball.
+
+These sports provide strong club structures, youth categories and coach-led development environments. They are initial validation priorities, not product boundaries.
 
 ---
 
-# Future Expansion
+# Broader Sports Coverage
 
-After validation, Sentiq can expand to:
-
-- Football.
-- Hockey.
-- Basketball.
-- Volleyball.
-- Other competitive sports.
+Sentiq can serve volleyball, tennis, athletics, swimming and other team or individual sports whenever the athlete-development need and organization model are present.
 
 ---
 

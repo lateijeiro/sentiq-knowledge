@@ -63,11 +63,16 @@ The ideal founding clubs are organizations that:
 
 # Priority Segment
 
-Initial focus:
+Founding clubs can come from any sport.
 
-## Rugby Clubs
+Priority outreach sports:
 
-Reasons:
+- Rugby.
+- Hockey.
+- Football.
+- Basketball.
+
+These organizations are strong candidates when they have:
 
 - Strong development culture.
 - Structured categories.
@@ -77,7 +82,7 @@ Reasons:
 
 ---
 
-# Future Expansion
+# Broader Outreach
 
 After validation:
 

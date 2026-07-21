@@ -39,7 +39,7 @@ They are looking for progress.
 Typical characteristics:
 
 - Age: 14–23 years old
-- Sport: initially rugby
+- Sport: any sport; priority early outreach includes rugby, hockey, football and basketball
 - Profile role in app: jugador, coach, or otro (persona label, not org role)
 
 ---
@@ -170,7 +170,7 @@ It makes the coach more effective through visibility and conversation starters.
 
 Typical characteristics:
 
-- Rugby coach, youth development coach, academy coach
+- Coach, youth development coach or academy coach across any sport
 - Organization role: coach or staff (Membership.role)
 
 ---
@@ -272,9 +272,10 @@ Sentiq helps clubs create a stronger development culture at scale.
 
 Examples:
 
-- Rugby clubs
+- Rugby, hockey, football and basketball clubs
 - Sports academies
 - Schools with sports programs
+- Organizations from any other sport
 
 Organization role: club_admin
 

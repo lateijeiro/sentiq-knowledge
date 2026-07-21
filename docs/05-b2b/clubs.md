@@ -193,13 +193,20 @@ Athletes
 
 # Initial Market Focus
 
-The initial focus is rugby clubs.
+Sentiq is designed for clubs and organizations in any sport.
 
 ---
 
-# Why Rugby
+# Priority Outreach Sports
 
-Rugby is a strong entry market because:
+Initial outreach and validation prioritize:
+
+- Rugby.
+- Hockey.
+- Football.
+- Basketball.
+
+These sports are strong entry markets because:
 
 - Clubs have strong identity.
 - Youth categories are structured.
@@ -209,15 +216,9 @@ Rugby is a strong entry market because:
 
 ---
 
-# Future Sports Expansion
+# Broader Sports Coverage
 
-After validation, Sentiq can expand to:
-
-- Football.
-- Hockey.
-- Basketball.
-- Volleyball.
-- Other competitive sports.
+The product is not restricted to those markets. It can serve volleyball, tennis, athletics, swimming and any other sport where structured reflection and athlete development create value.
 
 ---
 

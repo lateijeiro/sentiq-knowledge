@@ -143,9 +143,11 @@ Whenever communication approaches those areas, it should be reconsidered.
 
 Current primary audience:
 
-Young rugby players.
+Young athletes across any sport.
 
 Approximately 14 to 23 years old.
+
+Priority sports for initial outreach and validation include rugby, hockey, football and basketball. These are go-to-market priorities, not product boundaries.
 
 Secondary audience:
 
