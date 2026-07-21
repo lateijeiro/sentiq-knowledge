@@ -1,6 +1,8 @@
 # Sentiq B2B Pricing Strategy
 
-Version: 1.0
+Version: 1.1
+
+Status: Current package catalog + pricing strategy
 
 ---
 
@@ -87,89 +89,150 @@ Some organizations may require:
 
 ---
 
-# Initial Pricing Reference
+# Current Package Catalog
 
-Current reference:
-Sentiq Org
+The implemented Sentiq Org catalog has three monthly packages in USD.
 
-Approximately:
-
-USD 180 / month / club
-
-This initial pricing is designed for validation and early commercial adoption.
+Package differences currently define organization capacity and overage rates. They do not, by themselves, prove feature-level entitlement differences.
 
 ---
 
-# Initial Package Philosophy
+## Starter
 
-The first objective is not maximizing revenue.
+Base price:
 
-The first objective is:
+USD 199 / month / organization
+
+Included capacity:
+
+- 2 rosters
+- 40 players
+- 6 coach/staff memberships
+- 2 club admins
+
+Overage rates:
+
+- USD 20 per additional roster
+- USD 2 per additional player
+- USD 6 per additional coach/staff membership
+- USD 12 per additional club admin
+
+---
+
+## Growth
+
+Base price:
+
+USD 449 / month / organization
+
+Included capacity:
+
+- 6 rosters
+- 140 players
+- 18 coach/staff memberships
+- 4 club admins
+
+Overage rates:
+
+- USD 15 per additional roster
+- USD 1.60 per additional player
+- USD 5 per additional coach/staff membership
+- USD 10 per additional club admin
+
+---
+
+## Performance
+
+Base price:
+
+USD 999 / month / organization
+
+Included capacity:
+
+- 20 rosters
+- 500 players
+- 60 coach/staff memberships
+- 8 club admins
+
+Overage rates:
+
+- USD 12 per additional roster
+- USD 1.20 per additional player
+- USD 4 per additional coach/staff membership
+- USD 8 per additional club admin
+
+---
+
+## Custom
+
+Organizations can also use manual/custom billing and limits.
+
+In this mode:
+
+- Base price can be defined manually.
+- Capacity limits can be defined manually.
+- Overage rates can be defined manually.
+- The displayed plan name is `Personalizado`.
+
+This supports pilots, founding-club agreements and negotiated institutional contracts without creating another fixed package.
+
+---
+
+# Current Billing Behavior
+
+Package billing is currently configured as:
+
+- Monthly billing cycle
+- USD currency
+- Manual payment source
+- Base price plus usage overages
+- Period estimate based on current organization usage
+- Invoice generation and PDF download
+- Invoice states: pending, paid, void
+
+The data model allows annual cycles and Stripe as possible values, but the implemented package builder currently uses monthly/manual billing. They should not be presented as active automated payment flows.
+
+---
+
+# Capacity And Usage Rules
+
+Usage includes:
+
+- Rosters
+- Active players and pending player invitations
+- Active coach/staff memberships and pending invitations
+- Active club admins and pending invitations
+
+Pending invitations count toward capacity to prevent organizations from bypassing limits by issuing invitations before acceptance.
+
+When usage exceeds the included capacity, the estimate adds the corresponding unit overage.
+
+---
+
+# Current Commercial Philosophy
+
+The objective of the catalog is not only to maximize revenue.
+
+It should help Sentiq:
 
 - Validate willingness to pay.
-- Validate adoption.
-- Create successful cases.
-- Understand customer value.
+- Validate adoption at different organization sizes.
+- Create successful customer cases.
+- Understand perceived value.
+- Maintain predictable capacity and support expectations.
 
 ---
 
-# Possible Future Packages
+# Clubes Fundadores And Pilots
 
-Future pricing can evolve into different tiers.
+Founding clubs and pilots may receive custom conditions such as:
 
----
-
-# Starter
-
-For smaller organizations.
-
-Includes:
-
-- Basic organization setup.
-- Athlete access.
-- Coach access.
-- Core evaluations.
-- Objectives.
-
----
-
-# Growth
-
-For established clubs.
-
-Includes:
-
-- More athletes.
-- More categories.
-- More coaches.
-- Additional insights.
-- Better support.
-
----
-
-# Enterprise
-
-For larger organizations.
-
-Includes:
-
-- Custom implementation.
-- Multiple sports.
-- Institutional reporting.
-- Strategic partnership.
-
----
-
-# Clubes Fundadores Pricing
-
-The Clubes Fundadores program can include special conditions.
-
-Possible benefits:
-
-- Early access.
 - Preferential pricing.
 - Extended pilot period.
+- Custom limits.
 - Direct product feedback channel.
+
+These conditions should be represented as a Custom agreement rather than changing the fixed package definitions for every customer.
 
 ---
 
@@ -181,7 +244,7 @@ Organizations that commit to:
 - Longer relationships.
 - Strategic collaboration.
 
-can receive better conditions.
+can receive negotiated conditions through a Custom agreement.
 
 ---
 
@@ -189,31 +252,15 @@ can receive better conditions.
 
 B2C and B2B have different pricing logic.
 
----
-
-# B2C
-
-The athlete pays for:
-
-- Personal development.
-- Individual insights.
-- Personal evolution.
-
-Reference:
-USD 6.99 monthly
-
-USD 59.99 yearly
-
----
-
-# B2B
-
 The organization pays for:
 
-- Methodology.
-- Team adoption.
+- Athlete-development methodology.
+- Organization-wide adoption.
 - Coach enablement.
+- Capacity and operational visibility.
 - Institutional value.
+
+B2C pricing should be maintained in the product/Pro documentation rather than treated as part of the Sentiq Org package catalog.
 
 ---
 
