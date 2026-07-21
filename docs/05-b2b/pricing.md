@@ -1,8 +1,8 @@
 # Sentiq B2B Pricing Strategy
 
-Version: 1.1
+Version: 1.2
 
-Status: Current package catalog + pricing strategy
+Status: Current implemented package catalog + pricing strategy
 
 ---
 
@@ -105,17 +105,16 @@ USD 199 / month / organization
 
 Included capacity:
 
-- 2 rosters
-- 40 players
-- 6 coach/staff memberships
-- 2 club admins
+- 150 athletes
+- Unlimited roster structure
+- No commercial cap on coach/staff memberships
+- No commercial cap on club admins
 
-Overage rates:
+Athlete overage:
 
-- USD 20 per additional roster
 - USD 2 per additional player
-- USD 6 per additional coach/staff membership
-- USD 12 per additional club admin
+
+Growth becomes more cost-effective at 250 athletes, when Starter plus overage reaches USD 399.
 
 ---
 
@@ -123,21 +122,20 @@ Overage rates:
 
 Base price:
 
-USD 449 / month / organization
+USD 399 / month / organization
 
 Included capacity:
 
-- 6 rosters
-- 140 players
-- 18 coach/staff memberships
-- 4 club admins
+- 400 athletes
+- Unlimited roster structure
+- No commercial cap on coach/staff memberships
+- No commercial cap on club admins
 
-Overage rates:
+Athlete overage:
 
-- USD 15 per additional roster
 - USD 1.60 per additional player
-- USD 5 per additional coach/staff membership
-- USD 10 per additional club admin
+
+Performance becomes more cost-effective at 650 athletes, when Growth plus overage reaches USD 799.
 
 ---
 
@@ -145,21 +143,20 @@ Overage rates:
 
 Base price:
 
-USD 999 / month / organization
+USD 799 / month / organization
 
 Included capacity:
 
-- 20 rosters
-- 500 players
-- 60 coach/staff memberships
-- 8 club admins
+- 1000 athletes
+- Unlimited roster structure
+- No commercial cap on coach/staff memberships
+- No commercial cap on club admins
 
-Overage rates:
+Athlete overage:
 
-- USD 12 per additional roster
 - USD 1.20 per additional player
-- USD 4 per additional coach/staff membership
-- USD 8 per additional club admin
+
+From athlete 1001 onward, the product keeps the overage estimate visible and marks the organization as requiring a Custom plan.
 
 ---
 
@@ -170,9 +167,9 @@ Organizations can also use manual/custom billing and limits.
 In this mode:
 
 - Base price can be defined manually.
-- Capacity limits can be defined manually.
-- Overage rates can be defined manually.
-- The displayed plan name is `Personalizado`.
+- Athlete capacity can be defined manually.
+- Athlete overage can be defined manually.
+- The displayed plan name is `Custom`.
 
 This supports pilots, founding-club agreements and negotiated institutional contracts without creating another fixed package.
 
@@ -185,8 +182,10 @@ Package billing is currently configured as:
 - Monthly billing cycle
 - USD currency
 - Manual payment source
-- Base price plus usage overages
+- Base price plus athlete overage
 - Period estimate based on current organization usage
+- Upgrade recommendation when overage reaches the next package price
+- Custom-required warning when Performance exceeds 1000 athletes
 - Invoice generation and PDF download
 - Invoice states: pending, paid, void
 
@@ -194,18 +193,33 @@ The data model allows annual cycles and Stripe as possible values, but the imple
 
 ---
 
+# Existing Organization Migration
+
+Existing organizations assigned to Starter, Growth or Performance must have their stored package snapshot updated when this catalog is deployed.
+
+The backend includes a dry-run migration:
+
+`npm run migrate:org-packages-v2`
+
+After reviewing the listed organizations, apply it with:
+
+`npm run migrate:org-packages-v2 -- --apply`
+
+This sets roster, staff and club-admin commercial limits and overage rates to `null`, while preserving those schema fields for possible future reuse.
+
+---
+
 # Capacity And Usage Rules
 
-Usage includes:
+Commercial capacity usage includes:
 
-- Rosters
 - Active players and pending player invitations
-- Active coach/staff memberships and pending invitations
-- Active club admins and pending invitations
 
 Pending invitations count toward capacity to prevent organizations from bypassing limits by issuing invitations before acceptance.
 
-When usage exceeds the included capacity, the estimate adds the corresponding unit overage.
+Rosters, coach/staff memberships and club admins remain available as operational metrics but have no package cap or overage.
+
+When athlete usage exceeds the included capacity, the estimate adds the corresponding player overage. If that projected total reaches the next fixed package price, Sentiq recommends upgrading rather than charging a less favorable total.
 
 ---
 
